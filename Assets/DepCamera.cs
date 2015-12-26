@@ -54,7 +54,7 @@ public class DepCamera : MonoBehaviour {
         }
         else if (distZ != 0 || posVoulu != this.transform.position) //si l'objet ne bouge plus, on déplace quand même la caméra progressivement vers la destination voulue
         {
-            print(distZ + " / " + Vector3.SqrMagnitude(this.transform.position - posVoulu));
+            //print(distZ + " / " + Vector3.SqrMagnitude(this.transform.position - posVoulu));
             if (Vector3.SqrMagnitude(this.transform.position - posVoulu) < 0.0001f)
                 this.transform.position = posVoulu;
             else
